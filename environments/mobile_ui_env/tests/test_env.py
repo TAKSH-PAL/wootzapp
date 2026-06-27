@@ -1,6 +1,6 @@
 import pytest
 import verifiers as vf
-from ..mobile_ui_env import load_environment
+from mobile_ui_env import load_environment
 
 def test_environment_loads():
     env = load_environment()

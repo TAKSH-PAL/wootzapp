@@ -1,6 +1,6 @@
 import pytest
-from ..state import AppState
-from ..actions import execute_action
+from state import AppState
+from actions import execute_action
 
 def test_valid_tap_changes_screen():
     state = AppState()

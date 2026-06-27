@@ -1,5 +1,5 @@
 from typing import Dict, Any, List
-from .state import AppState
+from state import AppState
 
 # Define available elements per screen for validation
 TAP_TARGETS = {

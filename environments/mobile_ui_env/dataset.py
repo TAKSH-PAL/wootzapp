@@ -1,6 +1,6 @@
 from typing import Dict, Any, List
 from datasets import Dataset
-from .state import AppState
+from state import AppState
 
 def check_goal(state: AppState, goal: Dict[str, Any]) -> bool:
     """

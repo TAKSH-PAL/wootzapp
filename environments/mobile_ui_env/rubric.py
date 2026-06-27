@@ -4,9 +4,9 @@ import asyncio
 from typing import Dict, Any, List
 import verifiers as vf
 
-from .state import AppState
-from .actions import execute_action
-from .dataset import check_goal_extended
+from state import AppState
+from actions import execute_action
+from dataset import check_goal_extended
 
 def parse_actions(content: str) -> tuple[bool, List[Dict[str, Any]]]:
     """

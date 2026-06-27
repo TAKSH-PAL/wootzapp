@@ -1,6 +1,6 @@
 import verifiers as vf
-from .dataset import build_dataset
-from .rubric import build_rubric
+from dataset import build_dataset
+from rubric import build_rubric
 
 def load_environment(**kwargs) -> vf.Environment:
     """

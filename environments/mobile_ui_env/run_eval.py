@@ -3,7 +3,7 @@ import re
 import asyncio
 from typing import List, Dict, Any
 
-from .mobile_ui_env import load_environment
+from mobile_ui_env import load_environment
 
 def heuristic_policy(instruction: str) -> List[Dict[str, Any]]:
     """

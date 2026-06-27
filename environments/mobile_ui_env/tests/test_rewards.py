@@ -1,7 +1,7 @@
 import pytest
 import asyncio
-from ..state import AppState
-from ..rubric import (
+from state import AppState
+from rubric import (
     get_sim_result,
     success_reward,
     format_reward,
