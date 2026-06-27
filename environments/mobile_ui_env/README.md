@@ -71,7 +71,7 @@ An episode terminates when:
 *   `format_reward`: Evaluated at the trajectory level ($1.0$ if the entire sequence is a valid JSON array, $0.0$ otherwise).
 
 ### 5. Which rewards are dense or shaped?
-*   `efficiency_reward`: Varies continuously based on the number of steps taken to complete the task successfully: $\frac{\text{max\_steps} - \text{steps\_taken}}{\text{max\_steps}}$.
+*   `efficiency_reward`: Varies continuously based on the number of steps taken to complete the task successfully: `(max_steps - steps_taken) / max_steps`.
 *   `invalid_action_penalty`: Penalizes the agent incrementally ($-0.1$ net penalty per invalid tap or type target) for each incorrect action attempted.
 *   `safety_penalty`: Inflicts a negative score ($-0.3$ net penalty per violation) when the agent triggers unsafe state transitions (such as logging out).
 
